@@ -1,0 +1,9 @@
+@use '../abstracts/' as a;
+
+.post-page {
+  h1 {
+    font-size: 3rem;
+    font-family: "cormorant_garamond";
+    font-weight: 200;
+  }
+}

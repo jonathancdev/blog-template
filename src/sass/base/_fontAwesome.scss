@@ -1,0 +1,15 @@
+@use '../abstracts/' as a;
+
+//navbar/search bar search and x
+.search-bar__icon.svg-inline--fa {
+  font-size: 3rem;
+  color: a.$color-white-transparent3;
+}
+.menu__icon.svg-inline--fa {
+  font-size: 4.5rem;
+  color: a.$color-white-transparent3;
+}
+.hamburger__icon.svg-inline--fa {
+  font-size: 4rem;
+  color: a.$color-white-transparent3;
+}

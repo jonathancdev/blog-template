@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: ['gatsby-plugin-sass', 'gatsby-plugin-mdx', 'gatsby-plugin-fontawesome-css',
+      {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/src/posts/`,
+      },
+    },
+],
+  siteMetadata: {
+    title: 'Blog Name',
+    description: 'blog description',
+    copyright: 'copyright information'
+  }
 }

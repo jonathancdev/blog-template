@@ -1,0 +1,29 @@
+$color-white: #fff;
+$color-black: #000;
+$color-white-transparent: rgba(255, 255, 255, 0.25);
+$color-white-transparent2: rgba(255, 255, 255, 0.505);
+$color-white-transparent3: rgba(255, 255, 255, 0.759);
+
+//theme colors
+$color-blue: #5e6fc2;
+$color-dark-grey: #454555;
+$color-light-grey: #a9aabc;
+$color-red: #bf505a;
+$color-pink: #fc858c;
+
+//layout height & width
+$header-height: 8vh;
+$navbar-height: 22vh;
+$links-height: 5rem;
+
+//global styles
+
+$padding-body-sides: 0 3rem;
+$padding-body-top: 3rem;
+
+$border-radius: 0.35rem;
+$border-radius-left: 0.35rem 0 0 0.35rem;
+$border-radius-right: 0 0.35rem 0.35rem 0;
+$border-radius-rounder: 1.5rem;
+
+$input-height: 4rem;

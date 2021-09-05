@@ -1,0 +1,157 @@
+@use '../abstracts/' as a;
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "GothicA1";
+  src: url("../fonts/gothic/GothicA1-Thin.ttf");
+  font-weight: 100;
+}
+//garamond
+
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: "italic";
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: "italic";
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: "italic";
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-Italic.ttf");
+  font-weight: 400;
+  font-style: "italic";
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("../fonts/cormorant_garamond/CormorantGaramond-Light.ttf");
+  font-weight: 300;
+}
+//spartan
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-Black.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-ExtraLight.ttf");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Spartan";
+  src: url("../fonts/spartan/Spartan-Thin.ttf");
+  font-weight: 100;
+}
+body {
+  font-family: "GothicA1";
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: a.$color-dark-grey;
+}
+
+.about {
+  &__heading--primary {
+    font-family: "CormorantGaramond";
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,39 @@
+@use '../abstracts/' as a;
+
+//styles for all backgrounds
+body {
+  background-color: a.$color-white;
+}
+.home {
+  height: calc(100vh - #{a.$header-height});
+}
+.home-hero {
+  border: solid;
+  height: 35vh;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  &__img {
+    border: solid;
+    height: 60%;
+    width: 100%;
+  }
+}
+.home-recent-posts {
+  border: solid;
+  height: 45vh;
+  padding: 1rem;
+}
+.home-recent {
+  border: solid;
+  height: 30%;
+  width: 100%;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  &__img {
+    border: solid;
+    height: 100%;
+    width: 75%;
+  }
+}
