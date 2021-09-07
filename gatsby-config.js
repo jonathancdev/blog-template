@@ -6,14 +6,29 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-sass', 'gatsby-plugin-mdx', 'gatsby-plugin-fontawesome-css',
+  plugins: ['gatsby-plugin-sass', 'gatsby-plugin-mdx', 'gatsby-plugin-fontawesome-css', 'gatsby-plugin-image', 'gatsby-plugin-sharp', 'gatsby-transformer-sharp',
+      `gatsby-remark-images`,
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      },
+    },
       {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts/`,
       },
-    },
+  },
+    
 ],
   siteMetadata: {
     title: 'Blog Name',
@@ -21,3 +36,4 @@ module.exports = {
     copyright: 'copyright information'
   }
 }
+ 

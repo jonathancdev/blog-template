@@ -6,10 +6,16 @@
   left: 0;
   right: 0;
   height: a.$navbar-height;
+  transform: translateY(100%);
   z-index: 1;
+
+  &.active {
+    transform: translateY(0);
+  }
 }
 .hamburger {
   position: absolute;
+  top: 0.9rem;
   right: 0;
   margin: 3rem;
   border-radius: a.$border-radius-rounder;
@@ -29,6 +35,7 @@
   &.active {
     opacity: 1;
     transform: translateX(0);
+    top: -17rem;
   }
   &__line {
     display: inline-block;

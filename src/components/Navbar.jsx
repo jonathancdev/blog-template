@@ -21,7 +21,7 @@ export default function Navbar() {
     toggleMenu();
   };
   return (
-    <nav className="navbar">
+    <nav className={!menuOpen ? "navbar" : "navbar active"}>
       <div
         className={menuOpen ? "hamburger" : "hamburger active"}
         onClick={hamburgerClick}
