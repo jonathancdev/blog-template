@@ -17,7 +17,7 @@ export default function HomeRecentPost({ post }) {
         <section className="home-recent__content">
           <p className="home-recent__tag">{post.frontmatter.tags[0]}</p>
           <p className="home-recent__text">
-            {truncateString(post.frontmatter.excerpt, 150, "...")}
+            {truncateString(post.frontmatter.excerpt, 100, "...")}
           </p>
         </section>
       </section>

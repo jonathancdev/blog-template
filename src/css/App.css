@@ -165,7 +165,13 @@ body {
   font-family: "GothicA1";
   font-weight: 400;
   /* font-size: 16px; */
-  line-height: 1.7;
+  line-height: 1.2;
+  color: #454555;
+}
+
+a,
+a:link,
+a:visited {
   color: #454555;
 }
 
@@ -212,12 +218,23 @@ body {
   background-color: rgba(255, 255, 255, 0.505);
 }
 
+.divider {
+  margin: 0 1rem;
+  border-bottom: solid;
+  border-width: 1px;
+  font-family: CormorantGaramond;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #454555;
+  opacity: 0.75;
+}
+
 .navbar {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 22vh;
+  height: 18vh;
   transform: translateY(100%);
   z-index: 1;
 }
@@ -227,8 +244,8 @@ body {
 
 .hamburger {
   position: absolute;
-  top: 0.9rem;
   right: 0;
+  top: 15rem;
   margin: 3rem;
   border-radius: 1.5rem;
   height: 6rem;
@@ -241,7 +258,7 @@ body {
   justify-content: center;
   opacity: 0;
   transform: translateX(200%);
-  transition: transform 0.3s ease-in-out 0.2s, opacity 0.5s ease 0.2s;
+  transition: transform 0.25s ease-in-out 0.2s, opacity 0.4s ease 0.2s;
 }
 .hamburger.active {
   opacity: 1;
@@ -249,6 +266,7 @@ body {
   top: -17rem;
 }
 .hamburger__line {
+  position: absolute;
   display: inline-block;
   height: 0.25rem;
   width: 4rem;
@@ -260,17 +278,22 @@ body {
   height: 100%;
   opacity: 0;
   transform: translateY(100%);
-  transition: transform 0.3s ease-in-out 0.2s, opacity 0.25s ease 0.2s;
+  transition: transform 0.25s ease-in-out 0.2s, opacity 0.25s ease 0.2s;
 }
 .menu.active {
   opacity: 1;
   transform: translateY(0);
+}
+.menu__links--scroller {
+  overflow-y: scroll;
 }
 .menu__links {
   height: 5rem;
   display: flex;
   justify-content: space-evenly;
   background-color: #fff;
+  padding: 0.5rem;
+  width: 140%;
 }
 .menu .link:link,
 .menu .link:visited {
@@ -286,7 +309,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(22vh - 5rem);
+  height: calc(18vh - 5rem);
   width: 100%;
   background-color: #fc858c;
 }
@@ -300,7 +323,7 @@ body {
 }
 
 .header {
-  height: 8vh;
+  height: 6vh;
   display: flex;
   justify-content: flex-end;
 }
@@ -310,52 +333,116 @@ body {
   font-size: 3rem;
   color: #a9aabc;
 }
+.header__link {
+  height: 3rem;
+}
 
 body {
   background-color: #fff;
 }
 
 .home {
-  height: calc(100vh - 8vh);
+  height: calc(100vh - 6vh);
 }
 
 .home-hero {
-  border: solid;
   height: 35vh;
   padding: 1rem;
-  margin-bottom: 1rem;
 }
 .home-hero__img {
-  border: solid;
+  border-radius: 4px;
   height: 60%;
   width: 100%;
 }
+.home-hero__tag {
+  font-family: CormorantGaramond;
+  text-align: end;
+  text-transform: uppercase;
+  padding-top: 3px;
+  font-size: 1.5rem;
+  line-height: 0.8;
+}
+.home-hero__heading--primary {
+  font-family: CormorantGaramond;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 0.8;
+  padding-bottom: 0.5rem;
+}
+.home-hero__text {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
 
 .home-recent-posts {
-  border: solid;
   height: 45vh;
   padding: 1rem;
 }
 
 .home-recent {
-  border: solid;
   height: 30%;
   width: 100%;
-  padding: 1rem 0;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
 }
 .home-recent__img {
-  border: solid;
   height: 100%;
-  width: 75%;
+  width: 35%;
+  border-radius: 4px;
+}
+.home-recent__content {
+  height: 100%;
+  width: 65%;
+  padding: 0 1rem;
+}
+.home-recent__tag {
+  text-transform: uppercase;
+  color: #a9aabc;
+  font-family: CormorantGaramond;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.home-recent__text {
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
+.post-page h1,
+.post-page h2,
+.post-page h3 {
+  font-family: CormorantGaramond;
+  color: #454555;
+}
 .post-page h1 {
   font-size: 3rem;
-  font-family: "cormorant_garamond";
+  font-weight: 600;
+}
+.post-page h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.post-page h3 {
+  font-size: 1.5rem;
+}
+.post-page p {
+  padding: 5px 0rem;
+  color: #454555;
+  opacity: 0.8;
+  font-family: GothicA1;
   font-weight: 200;
+}
+.post-page strong {
+  font-weight: 500;
+}
+.post-page li::marker {
+  content: "";
+}
+.post-page a {
+  color: #5e6fc2;
+  font-weight: 400;
+  text-decoration: underline;
+  padding-left: 3px;
 }
 
 /*# sourceMappingURL=App.css.map */

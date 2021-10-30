@@ -30,19 +30,27 @@ export default function Navbar() {
       </div>
 
       <div className={!menuOpen ? "menu" : "menu active"}>
-        <div className="menu__links">
-          <Link className="link" to="/">
-            News
-          </Link>
-          <Link className="link" to="/blog">
-            Art
-          </Link>
-          <Link className="link" to="/about">
-            Culture
-          </Link>
-          <Link className="link" to="/about">
-            Food
-          </Link>
+        <div className="menu__links--scroller">
+          <div className="menu__links">
+            <Link className="link" to="/">
+              News
+            </Link>
+            <Link className="link" to="/blog">
+              Art
+            </Link>
+            <Link className="link" to="/about">
+              Culture
+            </Link>
+            <Link className="link" to="/about">
+              Food
+            </Link>
+            <Link className="link" to="/about">
+              Events
+            </Link>
+            <Link className="link" to="/about">
+              Music
+            </Link>
+          </div>
         </div>
         <div className="menu__search-bar">
           <SearchBar />

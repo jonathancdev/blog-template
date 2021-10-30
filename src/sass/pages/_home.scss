@@ -8,32 +8,69 @@ body {
   height: calc(100vh - #{a.$header-height});
 }
 .home-hero {
-  border: solid;
+  //border: solid;
   height: 35vh;
   padding: 1rem;
-  margin-bottom: 1rem;
   &__img {
-    border: solid;
+    //border: solid;
+    border-radius: 4px;
     height: 60%;
     width: 100%;
   }
+  &__tag {
+    font-family: CormorantGaramond;
+    text-align: end;
+    text-transform: uppercase;
+    padding-top: 3px;
+    font-size: 1.5rem;
+    line-height: 0.8;
+  }
+  &__heading--primary {
+    font-family: CormorantGaramond;
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 0.8;
+    padding-bottom: 0.5rem;
+  }
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 100;
+  }
 }
 .home-recent-posts {
-  border: solid;
+  //border: solid;
   height: 45vh;
   padding: 1rem;
 }
 .home-recent {
-  border: solid;
+  //border: solid;
   height: 30%;
   width: 100%;
-  padding: 1rem 0;
+
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   &__img {
-    border: solid;
+    //border: solid;
     height: 100%;
-    width: 75%;
+    width: 35%;
+    border-radius: 4px;
+  }
+  &__content {
+    //border: solid;
+    height: 100%;
+    width: 65%;
+    padding: 0 1rem;
+  }
+  &__tag {
+    text-transform: uppercase;
+    color: a.$color-light-grey;
+    font-family: CormorantGaramond;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 400;
   }
 }

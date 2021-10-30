@@ -4,6 +4,7 @@ import "../css/App.css";
 import Layout from "../components/Layout";
 import HomeHero from "../components/HomeHero";
 import HomeRecentPost from "../components/HomeRecentPost";
+import Divider from "../components/Divider";
 
 export default function Home({ data }) {
   const posts = data.allMdx.nodes;
@@ -15,11 +16,13 @@ export default function Home({ data }) {
     <Layout>
       <section className="home">
         <HomeHero post={heroPost} />
+        <Divider text="latest posts" />
         <section className="home-recent-posts">
           <HomeRecentPost post={posts[0]} />
           <HomeRecentPost post={posts[1]} />
           <HomeRecentPost post={posts[0]} />
         </section>
+        <Divider text="things to do" />
       </section>
     </Layout>
   );

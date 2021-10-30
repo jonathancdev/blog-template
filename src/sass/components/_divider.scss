@@ -1,0 +1,12 @@
+@use '../abstracts/' as a;
+
+.divider {
+  margin: 0 1rem;
+  border-bottom: solid;
+  border-width: 1px;
+  font-family: CormorantGaramond;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: a.$color-dark-grey;
+  opacity: 0.75;
+}
