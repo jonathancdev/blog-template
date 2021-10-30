@@ -6,8 +6,15 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-sass', 'gatsby-plugin-mdx', 'gatsby-plugin-fontawesome-css', 'gatsby-plugin-image', 'gatsby-plugin-sharp', 'gatsby-transformer-sharp',
-      `gatsby-remark-images`,
+  plugins: [
+    "gatsby-plugin-sass",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-fontawesome-css",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-remark-images",
+    "gatsby-plugin-netlify-cms",
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -21,19 +28,17 @@ module.exports = {
         ],
       },
     },
-      {
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/src/posts/`,
       },
-  },
-    
-],
+    },
+  ],
   siteMetadata: {
-    title: 'Blog Name',
-    description: 'blog description',
-    copyright: 'copyright information'
-  }
-}
- 
+    title: "Blog Name",
+    description: "blog description",
+    copyright: "copyright information",
+  },
+};
