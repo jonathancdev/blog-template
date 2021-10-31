@@ -6,6 +6,7 @@ public_folder: /assets
 collections:
   - name: posts
     label: posts
+    slug: { { fields.title } }
     folder: src/posts/{{slug}}
     create: true
     fields:
