@@ -8,7 +8,7 @@ collections:
     label: posts
     slug: "{{fields.title}}"
     folder: src/posts/
-    path: "{{slug}}"
+    path: "/{{slug}}"
     create: true
     fields:
       - { name: path, label: Path }
