@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: jonathancdev/blog-template
+  name: git-gateway
   branch: main
 media_folder: static/assets
 public_folder: /assets
